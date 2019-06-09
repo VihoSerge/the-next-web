@@ -109,8 +109,8 @@ main {
 
 .cover article  {
   height: 30vh;
-  background: red;
   position: relative;
+  color: #fff;
 }
 
 .cover::after {
@@ -122,6 +122,86 @@ main {
 
 .cover-story {
   width: 100%;
+}
+
+.cover-image {
+  top: 4px;
+  right: 4px;
+  left: 4px;
+  bottom: 4px;
+  position: absolute;
+  background-size: cover;
+  background-position: 50%;
+  z-index: 1;
+}
+
+.cover-date {
+  position: absolute;
+  right: 4px;
+  color: #fff;
+  padding: 14px 12px;
+  z-index: 4;
+}
+.cover-infos {
+  position: absolute;
+  bottom: 4px;
+  color: #fff;
+  padding: 14px 12px;
+  z-index: 4;
+}
+
+.cover-label {
+  text-transform: uppercase;
+  font-weight: 5OO;
+  font-size:  14px;
+}
+
+.cover-title {
+  font-size: 20px;;
+  margin-bottom: .25em
+}
+
+.cover-by {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.cover-trigger {
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
+  background: rgba(0,0,0,.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  will-change: background-color;
+  bottom: 4px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  z-index: 3;
+}
+
+.cover-logo {
+  position: absolute;
+  display: none;
+  left: 24px;
+  width: 30%;
+  top: 24px;
+  z-index: 4;
+}
+.cover-gradient {
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png) no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  bottom: 4px;
+  left: 4px;
+  mix-blend-mode: lighten;
+  pointer-events: none;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  z-index: 2;
+  display: none;
 }
 
 .latest {
@@ -240,7 +320,6 @@ main {
   } */
 
   .cover {
-    background-color: yellow;
     height: 60vh;
   }
 
@@ -252,10 +331,13 @@ main {
   .cover article:first-child  {
     width: 66.66666%;
     height: 1OO%;
-    background: green;
   }
   .cover .cover-large {
     height: 100%;
+  }
+
+  .cover-large .cover-title {
+    font-size: 40px;
   }
 }
 
@@ -266,7 +348,17 @@ main {
   .col {
     flex-basis: 25%;
   }
+
+  .cover-large .cover-title {
+    font-size: 56px;
+  }
+  .cover-gradient, .cover-logo {
+    display: block;
+  }
 }
 
 @media (min-width:1280px) {
+  .cover-infos {
+        padding: 24px 20px;
+  }
 }
