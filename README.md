@@ -1,7 +1,7 @@
 # The Next Web 
 #### Project: HTML & CSS3:T he Next Web
 
-#### [View in broswer](https://raw.githack.com/VihoSerge/the-next-web/dev/index.html)
+#### [View in broswer](https://vihoserge.github.io/the-next-web/)
 
 ## Authors
 
